@@ -17,31 +17,83 @@
         margin-left: auto;
         font-size: 15px;
         margin-right: 30px;
-        & a span{
+        & a span {
             color: $red;
         }
     }
-    &__menu{
+    &__menu {
         padding: 25px 0 25px;
         align-items: center;
         background-color: $bg;
         color: #fff;
     }
-    &__btn{
+    &__btn {
         color: #fff;
         padding: 5px 21px 5px 21px;
         background-color: $green;
         border-radius: 5px;
     }
-    &__btn + &__btn{
-      background-color: $red;  
+    &__btn + &__btn {
+        background-color: $red;
     }
 }
 .menu {
     &__list {
         display: flex;
     }
-    &__item{
+    &__item {
         margin-right: 38px;
+    }
+}
+.search {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 533px;
+    color: #fff;
+    text-align: center;
+    padding: 155px 0 100px;
+    &__inner {
+        &-title {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 72px;
+            margin-bottom: 10px;
+        }
+        &-text {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+        &-form {
+            position: relative;
+            max-width: 670px;
+            margin: 56px auto;
+            input {
+                display: block;
+                width: 100%;
+                box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+                border-radius: 4px;
+                height: 56px;
+                border: none;
+                font-size: 14px;
+                line-height: 30px;
+                font-weight: 500;
+                padding: 0 60px 0 26px;
+                &::placeholder {
+                    color: #90a4ae;
+                }
+            }
+            button {
+                position: absolute;
+                border: none;
+                background-color: transparent;
+                right: 20px;
+                top: 16px;
+                height: 20px;
+                width: 20px;
+                background-image: url(../images/icons/search.png);
+            }
+        }
     }
 }
