@@ -97,3 +97,83 @@
         }
     }
 }
+
+.product {
+    padding: 110px 0;
+    background-color: #f4f6f5;
+    &__inner {
+        &-btn {
+            text-align: center;
+            margin-bottom: 60px;
+            button {
+                padding: 12px 21px;
+                border: none;
+                background-color: #fff;
+                color: $bg;
+                font-weight: 600;
+                cursor: pointer;
+                margin-top: 60px;
+                & + button {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    &__item {
+        box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+        &-content {
+            padding: 0px 30px;
+            min-height: 90px;
+            border-bottom: 1px solid #e7ecf2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        max-width: 442px;
+        width: 100%;
+        // background-color: #fff;
+        &-img {
+            min-height: 250px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: $bg;
+            display: block;
+            margin-bottom: 10px;
+        }
+        &-category {
+            color: $green;
+        }
+        &-price {
+            font-size: 20px;
+            color: $bg;
+            font-weight: 700;
+        }
+        &-info {
+            padding: 0px 30px;
+            min-height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-author {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 14px;
+}

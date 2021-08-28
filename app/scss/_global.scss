@@ -7,6 +7,12 @@ body {
 	color: $text;
 }
 
+h2{
+	font-size: 36px;
+	color: $bg;
+	font-weight: 700;
+	text-align: center;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -25,6 +31,18 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.container-fluid{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (max-width: 720px){
+	.container-fluid{
+  padding: 0 15px;
+}
+}
+
 a{
 	display: inline-block;
 	text-decoration: none;
