@@ -1,6 +1,10 @@
 html,
 body {
 	height: 100%;
+	font-family: 'Roboto-Regular';
+	font-weight: 400;
+	font-size: 14px;
+	color: $text;
 }
 
 .wrapper {
@@ -21,7 +25,11 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
 
 
 

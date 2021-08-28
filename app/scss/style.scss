@@ -1,7 +1,47 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
 
-
+.header {
+    &__top {
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            height: 90px;
+            align-items: center;
+        }
+    }
+    &__text {
+        margin-left: auto;
+        font-size: 15px;
+        margin-right: 30px;
+        & a span{
+            color: $red;
+        }
+    }
+    &__menu{
+        padding: 25px 0 25px;
+        align-items: center;
+        background-color: $bg;
+        color: #fff;
+    }
+    &__btn{
+        color: #fff;
+        padding: 5px 21px 5px 21px;
+        background-color: $green;
+        border-radius: 5px;
+    }
+    &__btn + &__btn{
+      background-color: $red;  
+    }
+}
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__item{
+        margin-right: 38px;
+    }
+}
