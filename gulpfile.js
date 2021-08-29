@@ -44,6 +44,7 @@ function scripts() {
     'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/rateyo/lib/iife/jquery.rateyo.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -58,6 +59,7 @@ function styles() {
     'node_modules/normalize.css/normalize.css',
     'node_modules/magnific-popup/dist/magnific-popup.css',
     'node_modules/slick-carousel/slick/slick.scss',
+    'node_modules/rateyo/lib/iife/jquery.rateyo.css',
     'app/scss/**/*.scss',
   ])
       .pipe(scss({outputStyle: 'compressed'}))
