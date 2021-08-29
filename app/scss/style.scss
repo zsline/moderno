@@ -118,9 +118,17 @@
                 }
             }
         }
+        &-box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
     }
+
     &__item {
+        display: inline-block;
         box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+        margin-bottom: 30px;
         &-content {
             padding: 0px 30px;
             min-height: 90px;
@@ -131,7 +139,7 @@
         }
         max-width: 442px;
         width: 100%;
-        // background-color: #fff;
+        background-color: #fff;
         &-img {
             min-height: 250px;
             width: 100%;
@@ -143,6 +151,7 @@
             font-size: 18px;
             font-weight: 500;
             color: $bg;
+            font-weight: 700;
             display: block;
             margin-bottom: 10px;
         }
@@ -166,6 +175,12 @@
             align-items: center;
         }
     }
+    &__bottom{
+        margin-bottom: 0;
+        button{
+          box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);  
+        }    
+    }
 }
 .avatar {
     width: 30px;
@@ -177,3 +192,4 @@
     display: inline-block;
     margin-right: 14px;
 }
+
