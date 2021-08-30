@@ -97,6 +97,16 @@
         }
     }
 }
+.Rectangle_54_copy {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+  position: absolute;
+  left: 975px;
+  top: 987px;
+  width: 442px;
+  height: 408px;
+  z-index: 420;
+}
 
 .product {
     padding: 110px 0;
@@ -137,6 +147,10 @@
         display: inline-block;
         box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
         margin-bottom: 30px;
+        transition: all .3s;
+        &:hover{
+          box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);  
+        }
         &-content {
             padding: 0px 30px;
             min-height: 90px;
@@ -288,6 +302,39 @@
                 align-items: center;
                 transition: all .3s;
             }
+        }
+    }
+}
+.author{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__inner{
+        background-color: $green;
+        padding: 80px 60px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-title{
+            font-size: 30px;
+            line-height: 36px;
+            width: 280px;
+            span{
+                font-weight: 700;
+            }
+
+        }
+        &-btn a{
+            background-color: #fff;
+            color: $text;
+            font-size: 18px;
+            padding: 25px 45px;
+
         }
     }
 }
