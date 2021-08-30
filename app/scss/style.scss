@@ -56,14 +56,14 @@
     &__inner {
         &-title {
             font-size: 48px;
-            font-weight: 700;
+            @include f700;
             line-height: 72px;
             margin-bottom: 10px;
         }
         &-text {
             font-size: 20px;
             line-height: 30px;
-            font-weight: 500;
+            @include f500;
         }
         &-form {
             position: relative;
@@ -78,7 +78,7 @@
                 border: none;
                 font-size: 14px;
                 line-height: 30px;
-                font-weight: 500;
+                @include f500;
                 padding: 0 60px 0 26px;
                 &::placeholder {
                     color: #90a4ae;
@@ -110,7 +110,7 @@
                 border: none;
                 background-color: #fff;
                 color: $bg;
-                font-weight: 600;
+                @include f700;
                 cursor: pointer;
                 margin-top: 60px;
                 transition: all, 0.3s;
@@ -125,9 +125,11 @@
             }
         }
         &-box {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            // display: flex;
+            // justify-content: space-between;
+            // flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
         }
     }
 
@@ -155,9 +157,8 @@
         }
         &-title {
             font-size: 18px;
-            font-weight: 500;
             color: $bg;
-            font-weight: 700;
+            @include f700;
             display: block;
             margin-bottom: 10px;
         }
@@ -167,7 +168,7 @@
         &-price {
             font-size: 20px;
             color: $bg;
-            font-weight: 700;
+            @include f700;
         }
         &-info {
             padding: 0px 30px;
@@ -181,7 +182,7 @@
             align-items: center;
             max-width: 245px;
         }
-        &-star{
+        &-star {
             display: flex;
             align-items: center;
         }
@@ -231,7 +232,62 @@
             }
         }
     }
-    &__title{
+    &__title {
         margin-bottom: 60px;
+    }
+}
+.benefits {
+    background-color: $bg;
+    padding: 120px 0 110px;
+    &__title {
+        color: #fff;
+        margin-bottom: 90px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        text-align: center;
+        max-width: 324px;
+        &:hover{
+               .benefits__item-title{
+                   color: $green;
+               }
+                .benefits__item-images{
+                    background-color: $green;
+                    svg{
+                        fill: #fff;
+                    }
+                }
+            } 
+        &-title {
+            font-weight: 24px;
+            @include f700;
+            color: #fff;
+            margin-bottom: 30px;
+            transition: all .3s;
+              
+        }
+        &-text{
+            color: #b0bec5;
+        }
+        &-images {
+            margin: 0 auto 30px;
+            width: 116px;
+            height: 116px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s;
+            svg {
+                width: 75px;
+                height: 75px;
+                align-items: center;
+                transition: all .3s;
+            }
+        }
     }
 }
