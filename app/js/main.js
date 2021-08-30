@@ -7,7 +7,17 @@ $(function () {
         arrows: false,
     });
 
-    var mixer = mixitup('.product__inner-box');
+
+    var mixer = mixitup('.product__inner-box', {
+        controls: {
+            toggleLogic: 'and',
+            toggleDefault: 'none'
+        },
+        animation: {
+            duration: 800
+        }
+    });
+
 
     $(".rate-star").rateYo({
         rating: 5,
